@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Chat</string>
+    <string name="account_image">Account image</string>
+    <string name="log_in">Log in</string>
+    <string name="forget_password">Forget password ?</string>
+    <string name="enter_the_password">enter the password</string>
+    <string name="sign_up">Sign up</string>
 </resources>

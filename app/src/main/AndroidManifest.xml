@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyChat">
         <activity android:name=".RegistryActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

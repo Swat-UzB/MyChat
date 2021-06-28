@@ -1,14 +1,18 @@
 package com.example.mychat;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class LoginActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mychat.adapters.ChatAdapter;
+import com.example.mychat.databinding.ActivityLoginBinding;
+
+public class LoginActivity extends AppCompatActivity {
+    private ActivityLoginBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        binding = ActivityLoginBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
     }
 }

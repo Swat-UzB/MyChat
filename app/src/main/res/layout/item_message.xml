@@ -1,35 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:background="@color/white"
-    app:cardCornerRadius="20dp">
+    android:background="@drawable/style_edit_text"
+    android:orientation="vertical"
+    android:padding="10dp"
+    app:cardCornerRadius="50dp"
+    tools:layout_margin="20dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textViewOwner"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:orientation="vertical"
-        android:padding="10dp">
-
-        <TextView
-            android:id="@+id/textViewOwner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            tools:text="Owner" />
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:text="Owner" />
 
 
-        <TextView
-            android:id="@+id/textViewMessage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            tools:text="Hello how are u?" />
-    </LinearLayout>
-</com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:text="Hello how are u?" />
+</LinearLayout>
